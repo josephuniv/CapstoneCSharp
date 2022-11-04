@@ -1,0 +1,133 @@
+/* ----------------------------------------------------------
+Final Project
+Written by: Joseph Jananji 2195417
+Responsible on the full website
+For "Front-End Web Programming" Section 05807– Winter 2022
+---------------------------------------------------------- */
+
+body {
+    margin: 0;
+    font-family: Verdana, Arial, sans-serif;    
+    background-color: rgb(195, 208, 248);
+}
+
+header {
+    font-size: 3em;    
+    text-align: center;
+    color: beige;
+    height: 80px;
+    padding-top: 25px;
+    background-color: rgb(61, 88, 170);
+    text-shadow: 3px 3px 3px black;    
+}
+
+main {
+    min-height: 680px;    
+}
+/* I used this id to make the current page different */
+#current {
+    font-weight: bold;
+    text-shadow: 5px 5px 3px black;
+    color: beige;
+}
+
+nav a {
+    text-decoration: none;
+    color: beige;
+    font-size: 1.2em;
+}
+
+a:focus {
+    color: rgb(254, 254, 255);
+}
+
+a:hover {
+    color: rgb(53, 126, 53);
+}
+
+a:active {
+    color: #FF0000;
+}
+
+nav {
+    background-color: rgb(71, 65, 65);
+    padding: 7px 20px;
+    text-shadow: 3px 3px 3px black;
+}
+/* to add shadow and radius borders to the images */
+img {
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+}
+
+figcaption {
+    font-size: 1.5em;
+}
+
+figure {
+    float: left;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+/* To make the website responsive to the small devices */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        text-align: center;
+        font-size: 1em;
+        height: 10px;
+    }
+
+    table {
+        margin-left: 0;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    form {
+        margin-left: 0;
+    }
+}
+
+.padleft {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+/* To make the final price of the order different */
+.price {
+    font-weight: bold;
+    font-size: 1.5em
+}
+/* To list the image next to the product description */
+.imgproduct {
+    float: left;
+    margin-right: 20px;
+}
+
+footer {
+    font-size: small;
+    text-align: center;
+    font-style: italic;
+    clear: both;
+    background-color: rgb(61, 88, 170);
+    border-top: 5px solid rgb(71, 65, 65);
+    border-bottom: 5px solid rgb(71, 65, 65);  
+}
+/* To make the video in new page in the middle with shadow */
+video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+}
+/* To make the new product picture in index page in the middle */
+.newproduct {
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

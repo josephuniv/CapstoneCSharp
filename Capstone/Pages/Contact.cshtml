@@ -1,0 +1,33 @@
+﻿@page
+@model ContactModel
+@{
+    ViewData["Title"] = "Contact page";
+}
+
+<div>
+    <h1 class="display-4">Contact</h1>
+    <main>
+        <!-- I used id floatrightimg to float the contact image to the right of the form  -->
+        <img src="/pictures/contact.jpg" alt="contact" height="220" width="450" id="floatrightimg">
+        <h1>Contact Capstone Website</h1>
+        <h3><span style="color:rgb(37, 88, 37)">Contact us Today!</span></h3><br>
+
+        <form>
+            <label for="fname">* First Name </label> <input type="text" name="fname" id="fname" required>
+            <br><br>
+            <label for="lname">* Last Name </label> <input type="text" name="lname" id="lname" required>
+            <br><br>
+            <label for="email">* E-mail </label><input type="email" name="email" id="email" required><br><br>
+            <label for="phone">Phone </label><input type="text" name="phone" id="phone"> <br><br>
+            <label for="comment">* Comment: </label><textarea rows="2" cols="20" name="comment" id="comment"
+                                                              required></textarea><br><br>
+            &nbsp;&nbsp;&nbsp;<input type="submit" value="Submit"><br><br>
+        </form>
+        <br><br>
+        <h3>Contact information</h3>
+        1234 Capstone Website<br>
+        Montreal CA<br>
+        H1R 2N3 <br><br>
+        514-123-4567
+    </main>
+</div>
